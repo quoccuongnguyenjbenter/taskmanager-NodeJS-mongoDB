@@ -1,0 +1,399 @@
+{
+	"info": {
+		"name": "taskmanagement",
+		"_postman_id": "a224b96b-348f-37d7-b80e-9fbebfbefde1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "remove task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5a44005b024cec0eccfd1e6f",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "abcd",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "createdBy",
+							"value": "abcd",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "taskName",
+							"value": "doit",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/removeTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"removeTask"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5a43fe43b8b9b90f441eec59",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "taskName",
+							"value": "doitvdx",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/allTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"allTask"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all task by username",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5a43fe43b8b9b90f441eec59",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "taskName",
+							"value": "doitvdx",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/user/guru",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"user",
+						"guru"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5a446c26921854134c20db81",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "taskName",
+							"value": "task",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "guru task",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/editTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"editTask"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all task before given time",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5a43fe43b8b9b90f441eec59",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "taskName",
+							"value": "doitvdx",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/before/1514433444828",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"before",
+						"1514433444828"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all task after given time",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5a43fe43b8b9b90f441eec59",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "guru",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "taskName",
+							"value": "doitvdx",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/after/1514425120438",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"after",
+						"1514425120438"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "add task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "abcd",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "abcd",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "taskName",
+							"value": "doit",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/task/addTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"addTask"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
