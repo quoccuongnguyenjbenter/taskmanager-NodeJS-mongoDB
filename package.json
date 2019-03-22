@@ -1,7 +1,7 @@
 {
   "name": "taskmanager-nodejs-mongodb",
   "version": "1.0.0",
-  "description": "A simple task-manager application by nodejs and mongo.",
+  "description": "A simple task-manager api by nodejs and mongo.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
