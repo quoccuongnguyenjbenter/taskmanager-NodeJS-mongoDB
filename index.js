@@ -21,11 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //static files
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //use Router
 app.use('/task', Task);              // localhost:3000/task
-
 
 //set port
 const PORT = process.env.PORT || 3000;
