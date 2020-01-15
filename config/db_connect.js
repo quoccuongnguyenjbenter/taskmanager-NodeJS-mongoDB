@@ -1,8 +1,11 @@
 var mongoose = require('mongoose');
 
 //connect to mongodb
-mongoose.connect('mongodb://localhost/taskmanagement', {
+/* mongoose.connect('mongodb://localhost/taskmanagement', {
     useNewUrlParser: true
+}); */
+mongoose.connect('mongodb+srv://user:user123456@mongodbc-lfkub.mongodb.net/test1?retryWrites=true',{
+  useNewUrlParser: true
 });
 
 
